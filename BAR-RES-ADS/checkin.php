@@ -31,6 +31,7 @@
         <option value="1">Bar</option>
         <option value="2">Restaurante</option>
         <option value="3">Restauran-Bar</option>
+        <option value="4">Puesto de comida</option>
       </select>
     </div>
     <div class="form-floating">
