@@ -7,13 +7,13 @@
   <title>Registrarse</title>
 
   <!-- LINKS CSS -->
-  <link rel="stylesheet" href="../css/checkin.css">
+  <link rel="stylesheet" href="css/checkin.css">
 
 </head>
 <body>
 <main class="form-checkin">
   <form>
-    <img class="logo" src="..//img/iconoCheckIn2.png" alt="Icono Check In">
+    <img class="logo" src="img/iconoCheckIn2.png" alt="Icono Check In">
     <h1>Registrate</h1>
 
     <div class="form-floating">
