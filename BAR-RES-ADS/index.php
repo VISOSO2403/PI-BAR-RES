@@ -15,11 +15,11 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <!-- Espacio para ingresar categorias de forma desplegable -->
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Restaurantes</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Bar</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Puestos de comida</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Restaurant-bar</a></li>
                 </ul>
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                     <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
@@ -41,18 +41,31 @@
             </div>
         </div>
 
+        <button onclick="location.href='agregaranuncio.php'" type="button"  class="btn btn-warning">Agregar anuncio
+        <!--<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-crosshair" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
+            <path d="M4 16v2a2 2 0 0 0 2 2h2" />
+            <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+            <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
+            <line x1="9" y1="12" x2="15" y2="12" />
+            <line x1="12" y1="9" x2="12" y2="15" />
+        </svg>--></button> 
+        </div><br>
+
         <div class="row g-5">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Tacos Tere</h5>
-                        <p class="card-text">Nueva promocion en tacos, compra 5 tacos y llevate una coca gratis(600 ml)</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    <img src="img/cafe.jpg" class="card-img-bottom" alt="...">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tacos Tere</h5>
+                    <p class="card-text">Nueva promocion en tacos, compra 5 tacos y llevate una coca gratis(600 ml)</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
+                <img src="img/cafe.jpg" class="card-img-bottom" alt="...">
             </div>
-            <div class="col-md-4">
+        </div>
+        <div>
+            <!--<div class="col-md-4">
                 <div class="position-sticky" style="top: 2rem;">
                     <div class="p-4 mb-3 bg-light rounded">
                         <h4 class="fst-italic">About</h4>
@@ -86,7 +99,7 @@
                         </ol>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
 
