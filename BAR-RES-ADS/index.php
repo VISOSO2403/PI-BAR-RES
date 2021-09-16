@@ -41,8 +41,8 @@
             </div>
         </div>
 
-        <button onclick="location.href='agregaranuncio.php'" type="button"  class="btn btn-warning">Agregar anuncio
-        <!--<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-crosshair" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+       <!-- <button onclick="location.href='agregaranuncio.php'" type="button"  class="btn btn-warning">Agregar anuncio
+       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-crosshair" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
             <path d="M4 16v2a2 2 0 0 0 2 2h2" />
@@ -50,7 +50,7 @@
             <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
             <line x1="9" y1="12" x2="15" y2="12" />
             <line x1="12" y1="9" x2="12" y2="15" />
-        </svg>--></button> 
+        </svg></button>  -->
         </div><br>
 
         <div class="row g-5">
