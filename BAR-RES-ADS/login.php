@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrarse</title>
+  <link rel="shortcun icon" href="img/inicio-de-sesion.png">
 
   <!-- LINKS CSS -->
   <link rel="stylesheet" href="css/login.css">

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="shortcut icon" href="img/icono-empresa.png">
+    
     <!-- LINKS CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,19 +52,29 @@
             <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
             <line x1="9" y1="12" x2="15" y2="12" />
             <line x1="12" y1="9" x2="12" y2="15" />
-        </svg></button>  -->
-        </div><br>
-
+        </svg></button> 
+        </div><br> -->
+        
         <div class="row g-5">
         <div class="col-md-8">
+        <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">BAR-RES-ADS</h5>
+                    <p class="card-text">Somos una empresa dedicada a la publicacion de anuncios, con la finalidad de dar a conocer
+                        a las pequeñas empresas que van iniciando en el mundo de los restaurantes/bares.</p>
+                    <p class="card-text"><small class="text-muted">Last updated just now</small></p>
+                </div>
+                <img src="img/anuncio-resbar-1.png" class="card-img-bottom" alt="BAR-RES-ADS">
+            </div><br>
+
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Tacos Tere</h5>
                     <p class="card-text">Nueva promocion en tacos, compra 5 tacos y llevate una coca gratis(600 ml)</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
-                <img src="img/cafe.jpg" class="card-img-bottom" alt="...">
-            </div>
+                <img src="img/cafe.jpg" class="card-img-bottom" alt="Ejemplo anuncio cafe">
+            </div><br>
         </div>
         <div>
             <!--<div class="col-md-4">
@@ -104,16 +116,41 @@
     </main>
 
     <div class="container">
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    <footer class="p-3 bg-dark text-white">
+        <div class="row">
+        <div class="col-2">
+            <h5>Creadores</h5>
+            <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
             </ul>
-            <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
-        </footer>
+        </div>
+
+        <div class="col-2">
+            <h5>Roles</h5>
+            <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+        </div>
+
+        <div class="col-2">
+            <h5>Institucion</h5>
+            <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+        </div>
+    </footer>
     </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Dashboard Template · Bootstrap v5.1</title>
+    <title>Administrador</title>
 
     <!-- LINKS CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

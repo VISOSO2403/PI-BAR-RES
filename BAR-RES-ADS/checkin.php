@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrarse</title>
+  <link rel="shortcun icon" href="img/garrapata.png">
 
   <!-- LINKS CSS -->
   <link rel="stylesheet" href="css/checkin.css">
@@ -13,7 +14,7 @@
 <body>
 <main class="form-checkin">
   <form>
-    <img class="logo" src="img/iconoCheckIn2.png" alt="Icono Check In">
+    <img class="logo" src="img/logo-checkin.png" alt="Icono Check In">
     <h1>Registrate</h1>
 
     <div class="form-floating">
