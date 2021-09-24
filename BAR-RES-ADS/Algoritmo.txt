@@ -1,0 +1,27 @@
+-- ALGORITMO BAR-RES-ADS --
+
+1.- Crear los diseños que se usaran como base para la codificacion de 
+    las interfaces principales.
+2.- Codificar las interfaces.
+    2.1.- En la creacion de la interfaz principal (index.php) se colocaran opciones
+	  de comentarios y likes, para de esta forma tener una mejor forma de
+	  diferenciar los negocios que tienen una suscripcion gratuita o de paga.
+    2.2.- En la interfaz de checkIn, aparece un Check, el cual sirve para dar a conocer
+	  los terminos y condiciones de nuestra empresa BAR-RES-ADS la cual tendra
+	  que realizarse de manera honesta.
+	     2.2.1.- Se realizara un apartado para selecionar el plan que el negocio desea
+		     donde se mostrara el plan gratuito, el plan clasico y el plan premium. 
+    2.3.- Para la creacion de la interfaz de login, el usuario unicamente podra ingresar
+	  con el correo electronico de la empresa y su contraseña que no podra ser cambiada.
+    2.4.- En la interfaz de Administrador principal, contara con las opciones de visualizar,
+	  las publicaciones que se quieren subir a la pagina, los negocios que se quieren
+	  registrar en la aplicacion y tambien las opciones de rechazar, aceptar y eliminar
+	  los datos anteriormente mencionados
+    2.5.- En la interfaz de Usuario de la empresa registrada, unicamente tendra las opciones
+	  de ver sus publicaciones, editarlas y/o eliminarlas, claramente tambien una
+	  opcion para subir sus anuncios.
+3.- Analizar la problematica para dar
+    datos a almacenar en una base de datos, de igual forma establecer como van
+    a relacionarse esos datos.
+	3.1.- Realizar la creacios de la base de datos en xamp o mysql worbrech
+4.- 
