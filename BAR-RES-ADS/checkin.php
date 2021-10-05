@@ -45,11 +45,12 @@
     </div>
     <div class="checkbox">
       <label>
-        <input type="checkbox" class="check"> Acepto terminos <br> y condiciones
+        <input type="checkbox" class="check"> <a href="terminos.html">Acepto terminos <br> y condiciones</a>
       </label>
     </div>
     <button class="btnRegis" type="submit">Registrar</button>
-    <button class="btnInicio" type="submit">Inicio</button>
+    <!-- <button class="btnInicio" type="submit" role="link">Inicio</button> -->
+    <input class="btnInicio" type="button" onclick="location.href='index.php';" value="Inicio" />
     <p class="copy">&copy; 2021–2021</p>
   </form>
 </main>

@@ -79,7 +79,7 @@ option{
   color: rgba(153, 145, 145, 0.623);
 }
 
-.form-checkin button{
+.form-checkin .btnInicio, .btnRegis{
   font-size: 18px; 
   padding: .6rem 1rem;
   border: 1px solid #995309;
@@ -119,5 +119,10 @@ p{
   font-weight: bold;
   display: block;
   font-size: 15px;
+  color: #fff;
+}
+
+a{
+  
   color: #fff;
 }

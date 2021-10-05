@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<main class="form-checkin">
+<main class="form-login">
   <form>
     <img class="logo" src="img/usuario.png" alt="Icono Check In">
     <h1>Inicie sesion</h1>
@@ -26,7 +26,7 @@
       <input type="password" class="txtPass" placeholder="Contraseña">
     </div>
     <button class="btnIngre" type="submit">Ingresar</button>
-    <button class="btnInicio" type="submit">Inicio</button>
+    <input class="btnInicio" type="button" onclick="location.href='index.php';" value="Inicio">
     <p class="copy">&copy; 2021–2021</p>
   </form>
 </main>

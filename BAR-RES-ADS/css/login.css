@@ -5,7 +5,7 @@ body {
     font-family: 'Oswald', sans-serif;
   }
   
-  .form-checkin{
+  .form-login{
     width: 320px;
     height: 400px;
     top: 50%;
@@ -17,7 +17,7 @@ body {
     background: rgba(0, 0, 0, 0.5)
   }
   
-  .form-checkin .logo{
+  .form-login .logo{
     width: 100px;
     height: 100px;
     position: absolute;
@@ -25,7 +25,7 @@ body {
     left: calc(50% - 50px);
   }
   
-  .form-checkin h1{
+  .form-login h1{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
@@ -33,7 +33,7 @@ body {
     color: #fff;
   }
   
-  .form-checkin label{
+  .form-login label{
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -47,8 +47,8 @@ body {
     margin-bottom: 10px;
   }
 
-  .form-checkin input[type="password"],
-  .form-checkin input[type="Email"]{
+  .form-login input[type="password"],
+  .form-login input[type="Email"]{
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -62,7 +62,7 @@ body {
     color: rgba(153, 145, 145, 0.623);
   }
   
-  .form-checkin button{
+  .form-login .btnInicio, .btnIngre{
     font-size: 18px; 
     padding: .6rem 1rem;
     border: 1px solid #995309;
@@ -78,13 +78,13 @@ body {
     cursor: pointer;
   }
   
-  .form-checkin button:hover{
+  .form-login button:hover{
     background-color: #e0811b;
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
     background-image: linear-gradient(#f0a100 10%,#f70 100%);
   }
   
-  .form-checkin button:active{
+  .form-login button:active{
     background-color: #cf6a00;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
