@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="shortcut icon" href="img/icono-empresa.png">
-    
+
     <!-- LINKS CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -22,6 +22,7 @@
                     <li><a href="#" class="nav-link px-2 text-white">Bar</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Puestos de comida</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Restaurant-bar</a></li>
+                    <li><a href="/planes.htm" class="nav-link px-2 text-white">Planes</a></li>
                 </ul>
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                     <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
