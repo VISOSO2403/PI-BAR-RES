@@ -1,4 +1,4 @@
-<footer class="py-5 ">
+<footer class="py-5 bg-dark text-white">
     <div class="row">
     <div class="col-2">
     <h5>Section</h5>
