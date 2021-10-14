@@ -51,7 +51,7 @@
     <button class="btnRegis" type="submit">Registrar</button>
     <!-- <button class="btnInicio" type="submit" role="link">Inicio</button> -->
     <input class="btnInicio" type="button" onclick="location.href='index.php';" value="Inicio" />
-    <p class="copy">&copy; 2021–2021</p>
+    <p class="copy">&copy; 2021</p>
   </form>
 </main>
 </body>
