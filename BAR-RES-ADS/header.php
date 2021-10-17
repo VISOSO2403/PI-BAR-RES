@@ -7,15 +7,14 @@
                     <li class="menu__item container-submenu">
                         <a href="#" class="menu__link submenu-btn">Categorias <i class="fas fa-angle-down"></i></a>
                         <ul class="submenu">
-                            <li class="menu__item"><a href="" class="menu__link">Restaurante</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Restaurante-bar</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Bar</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Puesto de comida</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Mixto</a></li>
+                            <li class="menu__item"><a href="restaurante.php" class="menu__link">Restaurante</a></li>
+                            <li class="menu__item"><a href="ResBar.php" class="menu__link">Restaurante-bar</a></li>
+                            <li class="menu__item"><a href="bares.php" class="menu__link">Bar</a></li>
+                            <li class="menu__item"><a href="PuestosDeComida.php" class="menu__link">Puesto de comida</a></li>
                         </ul>
                     </li>
                     <li class="menu__item"><a href="planes.php" class="menu__link">Planes</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Negocios</a></li>
+                    <li class="menu__item"><a href="negocios.php" class="menu__link">Negocios</a></li>
                 </ul>
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                     <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">

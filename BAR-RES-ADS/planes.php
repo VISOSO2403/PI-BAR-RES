@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Planes</title>
-    <link rel="shortcut icon" href="img/favicon-96x96.png">
+    <link rel="shortcut icon" href="img/list.png">
 
     <!-- LINKS CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -126,6 +126,6 @@
     <?php 
       require ('footer.php')
     ?>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
