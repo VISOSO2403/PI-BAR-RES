@@ -7,7 +7,6 @@ body {
 
 /* Inician estilos del menu (Header)*/
 .nav-bar{
-    background-color:transparent;
     padding: 10px;
     display: block;
     cursor: pointer;
@@ -21,11 +20,12 @@ body {
 .menu{
     background-color: transparent;
     width: 100%;
-    margin-left: -100%;
+    display: flex;
 }
 .menu__link{
     display: block;
     padding: 10px;
+    color: white;
     text-decoration: none;
 }
 .menu__link:hover{
@@ -37,6 +37,7 @@ body {
 .submenu{
     height: 0;
     overflow: hidden;
+    position: absolute;
     transition: all 0.4s;
 }
 .submenu .menu__link{
@@ -47,7 +48,7 @@ body {
 /* Estilos del menu para computadora */
 @media(min-width:1024px){
     .nav-bar{
-        display: none;
+        display: inline-block;
     }
     .menu{
         margin-left: 0;
