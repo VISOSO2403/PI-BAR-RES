@@ -10,6 +10,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="empresaR.php">Empresas Resgistradas</a>
                     </li>
+                    <li>
+                        <a href="agregarAdmin.php" class="nav-link">Agregar administrador</a>
+                    </li>
                 </ul>
             </div>
         </nav>

@@ -4,6 +4,7 @@
     <div class="navbar-nav">
     <div class="text-end">
         <button onclick="location.href='index.php'" type="button" class="btn btn-outline-light me-2">Inicio</button>
+        
         <button onclick="location.href='#'" type="button"  class="btn btn-warning">Cerrar sesion</button>
     </div>
     </div>

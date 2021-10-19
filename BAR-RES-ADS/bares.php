@@ -22,12 +22,13 @@
   ?>
 
 <div class="container py-3">
-  <header>
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal">Bares</h1>
-  </header>
-
   <main>
+    <header>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Bares</h1>
+      </div>
+    </header>
+  </main>
 </div>    
   
 
