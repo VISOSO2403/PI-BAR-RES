@@ -30,10 +30,9 @@
     </header>
   </main>
 </div>    
-  
 
 
-  <br><br>
+
     <?php 
       require ('footer.php')
     ?>
