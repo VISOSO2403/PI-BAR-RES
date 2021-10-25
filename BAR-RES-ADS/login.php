@@ -15,15 +15,15 @@
 <main class="form-login">
   <form>
     <img class="logo" src="img/usuario.png" alt="Icono Check In">
-    <h1>Inicie sesion</h1>
+    <h1>Iniciar sesion</h1>
 
     <div class="form-floating">
       <label for="floatingEmail">Correo:</label>
-      <input type="email" class="txtEmail" placeholder="nombre@ejemplo.com">
+      <input type="email" id="imputEmail" class="form-control" placeholder="nombre@ejemplo.com" required autofocus>
     </div>
     <div class="form-floating">
       <label class="cate" for="floatingPassword">Contraseña:</label>
-      <input type="password" class="txtPass" placeholder="Contraseña">
+      <input type="password" id="imputPassword" class="form-control" placeholder="Contraseña">
     </div>
     <button class="btnIngre" type="submit">Ingresar</button>
     <input class="btnInicio" type="button" onclick="location.href='index.php';" value="Inicio">
