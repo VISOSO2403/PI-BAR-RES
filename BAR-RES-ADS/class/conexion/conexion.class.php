@@ -1,8 +1,8 @@
 <?php 
 
-require '../../config/config.php';
+require "../../config/config.php";
 
-class conexion extends Mysqli{
+class Conexion extends Mysqli{
     private $host;
     private $user;
     private $pass;
@@ -14,15 +14,12 @@ class conexion extends Mysqli{
         $this->pass = CONF_DB_PASS;
         $this->db = CONF_DB_DATABASE;
 
-        parent::__construct($this->host, $this->user, $this->pass, $this->db;);
+        parent::__construct($this->host, $this->user, $this->pass, $this->db);
     }
 
     public function setCharset(){
         $this->set_charset(CONF_DB_CHARSET);
     }
 }
-
-$conn = new conexion();
-var_dump($conn);
 
 ?>

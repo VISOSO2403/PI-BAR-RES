@@ -20,8 +20,8 @@
                     <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
                 </form>
                 <div class="text-end">
-                    <button onclick="location.href='checkin.php'" type="button" class="btn btn-outline-light me-2">Registrase</button>
-                    <button onclick="location.href='login.php'" type="button"  class="btn btn-warning">Ingresar</button>
+                    <button onclick="location.href='lcheckin/checkin.php'" type="button" class="btn btn-outline-light me-2">Registrase</button>
+                    <button onclick="location.href='login/login.php'" type="button"  class="btn btn-warning">Ingresar</button>
                 </div>
             </div>
         </nav>

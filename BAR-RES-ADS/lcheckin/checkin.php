@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrarse</title>
-  <link rel="shortcun icon" href="img/garrapata.png">
+  <link rel="shortcun icon" href="../img/garrapata.png">
 
   <!-- LINKS CSS -->
-  <link rel="stylesheet" href="css/checkin.css">
+  <link rel="stylesheet" href="../css/checkin.css">
 
 </head>
 <body>
 <main class="form-checkin">
   <form>
-    <img class="logo" src="img/logo-checkin.png" alt="Icono Check In">
+    <img class="logo" src="../img/logo-checkin.png" alt="Icono Check In">
     <h1>Registrate</h1>
 
     <div class="form-floating">
@@ -45,12 +45,11 @@
     </div>
     <div class="checkbox">
       <label>
-        <input type="checkbox" class="check"> <a href="terminos.html">Acepto terminos <br> y condiciones</a>
+        <input type="checkbox" class="check"> <a href="../terminos.html">Acepto terminos <br> y condiciones</a>
       </label>
     </div>
+    <input class="btnInicio" type="button" onclick="location.href='../index.php';" value="Inicio" />
     <button class="btnRegis" type="submit">Registrar</button>
-    <!-- <button class="btnInicio" type="submit" role="link">Inicio</button> -->
-    <input class="btnInicio" type="button" onclick="location.href='index.php';" value="Inicio" />
     <p class="copy">&copy; 2021</p>
   </form>
 </main>
