@@ -45,7 +45,7 @@
     </div>
     <div class="checkbox">
       <label>
-        <input type="checkbox" class="check"> <a href="../terminos.html">Acepto terminos <br> y condiciones</a>
+        <input type="checkbox" class="check"> <a href="../terminos.php">Acepto terminos <br> y condiciones</a>
       </label>
     </div>
     <input class="btnInicio" type="button" onclick="location.href='../index.php';" value="Inicio" />

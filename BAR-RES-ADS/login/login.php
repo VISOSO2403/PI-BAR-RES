@@ -28,10 +28,10 @@
         <label class="cate" for="floatingPassword">Contraseña:</label>
         <input type="password" id="imputPassword" name="password" class="form-control txtPass" placeholder="Contraseña">
       </div>
+      <a href="../lcheckin/checkin.php">Aun no tienes una cuenta?</a>
       <!-- Botones de acciones -->
       <input class="btnInicio" type="button" onclick="location.href='../index.php';" value="Inicio">
       <button class="btnIngre" name="submit" type="submit">Ingresar</button>
-      <p class="copy">&copy; 2021–2021</p>
     </form>
   </main>
 </body>

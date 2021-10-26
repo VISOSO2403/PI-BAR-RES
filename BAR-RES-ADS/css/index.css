@@ -5,98 +5,10 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-/* Inician estilos del menu (Header)*/
-.nav-bar{
-    padding: 10px;
-    display: block;
-    cursor: pointer;
-    width: 100%;
-}
-.menu, .submenu{
-    list-style: none;
-    padding: 0%;
-    margin: 0%;
-}
-.menu{
-    background-color: transparent;
-    width: 100%;
-    display: flex;
-}
-.menu__link{
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-}
-.menu__link:hover{
-    background:darkgrey;
-}
-.submenu .menu__link:hover{
-    background:darkgrey;
-}
-.submenu{
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    transition: all 0.4s;
-}
-.submenu .menu__link{
-    background-color:#343a40;
-    padding-left: 40px;
-}
-
-/* Estilos del menu para computadora */
-@media(min-width:1024px){
-    .nav-bar{
-        display: inline-block;
-    }
-    .menu{
-        margin-left: 0;
-        display: flex;
-    }
-    .container-submenu{
-        position: relative;
-    }
-    .submenu{
-        position: absolute;
-        top: 60px;
-        width: 200px;
-        overflow: visible;
-        z-index: 1000;
-        opacity: 0;
-        visibility: hidden;
-    }
-    .container-submenu:hover .submenu{
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
 /* Inician estilos de las tarjetas */
 .card img{
     width: 100%;
     height: 500px;
 }
 
-/* Estilos para iconos de redes sociales */
-.social {
-    margin: 50px;
-}
-.social h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-.link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.link a {
-    margin: 0 30px;
-}
-.link a i {
-    font-size:  3rem;
-}
 
-/* Estilos para el footer */

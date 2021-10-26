@@ -1,6 +1,6 @@
 <?php 
 
-require "../../config/config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/PI/BAR-RES-ADS/config/config.php';
 
 class Conexion extends Mysqli{
     private $host;

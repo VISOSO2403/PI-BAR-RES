@@ -1,0 +1,16 @@
+body{
+  font-size: 15px;
+  font-family: 'Oswald', fantasy;
+}
+
+/* h1{
+  text-align: center;
+} */
+
+p{
+  text-align: justify;
+}
+
+ol{
+  list-style-type: lower-alpha;
+}

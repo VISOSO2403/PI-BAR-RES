@@ -97,10 +97,6 @@ body {
     background-image: linear-gradient(#f0a100 10%,#f70 100%);
   }
   
-  p{
-    padding: 5rem 5rem;
-    font-weight: bold;
-    display: block;
-    font-size: 15px;
-    color: #fff;
-  }
+a{
+  color: #fff;
+}
