@@ -1,7 +1,7 @@
 <?php
 
 abstract class Message{
-  abstract punlic function getMessage($message);
+  abstract public function getMessage($message);
 }
 
 ?>
