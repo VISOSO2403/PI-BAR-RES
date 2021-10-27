@@ -14,20 +14,32 @@ class Login{
   }
 
   public function setPassword(string $password){
-    $this->password = password_hash($password, PASSWORD_BCRYPT);
+    $this->password = $password;
   }
 
   public function signIn(){
-    $query = "SELECT * FROM `usuarios` WHERE email = '$this->email' AND passwoord = '$this->password' ";
+    $row = $this->getArrayQueryResult();
 
-    $res = $this->con->query($query);
-
-    if ($this->con->affected_rows > 0)
-      return $res->fetch_array(MYSQLI_ASSOC);
-    return false;
-    
+    if ($this->isAffectedRows()){
+      if ($this->passwordVerify($row['password']))
+        return $row;
+    }
+    return false; 
   }
 
+  public function getArrayQueryResult(){
+    $query = "SELECT * FROM `usuarios` WHERE email = '$this->email' ";
+    $result = $this->con->query($query);
+    return $result->fetch_array(MYSQLI_ASSOC);
+  }
+
+  public function isAffectedRows():bool{
+    return ($this->con->affected_rows > 0);
+  }
+
+  public function passwordVerify($password):bool{
+    return password_verify($this->password, $password);
+  }
 }
 
 

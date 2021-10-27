@@ -1,4 +1,13 @@
-<?php $message = $_GET['message'] ?? ''; ?>
+<?php 
+spl_autoload_register(function($class){
+  include "../class/Message/$class.class.php";
+});
+
+$message = isset($_GET['message']) && isset($_GET['type']) ? MessageFactory::createMessage($_GET['type']) : false;
+
+$message_out = $message ? $message->getMessage($_GET['message']) : '';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +26,7 @@
     <form class="form-login" method="post" action="validar_login.php">
       <img class="logo" src="../img/usuario.png" alt="Icono Check In">
       <h1>Iniciar sesion</h1>
-      <?php echo $message ?>
+      <?php echo $message_out ?>
       <!-- Email -->
       <div class="form-floating">
         <label for="floatingEmail">Correo:</label>
