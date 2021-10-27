@@ -11,10 +11,16 @@ if (isset($_POST['submit'])) {
   if (empty($email) or empty($password)) {
     header('location:login.php?message=Usuario o contraseña no introducidos');
   }
+  
+  $login = new Login(new Conexion);
+  $login->setEmail($email);
+  $login->setPassword($password);
+  
+  if ($login->signIn()){
+    echo 'Credenciales validas';
+  }else{
+    header('location: login.php?message=Usuario o contraseña incorrectos');
+  }
 }
 
-$login = new Login(new Conexion);
-$login->setEmail($email);
-$login->setPassword($password);
-$login->signIn();
 ?>

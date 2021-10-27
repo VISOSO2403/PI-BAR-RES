@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-10-2021 a las 20:48:25
+-- Tiempo de generación: 27-10-2021 a las 09:09:37
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 8.0.3
 
@@ -24,38 +24,21 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `administradores`
+-- Estructura de tabla para la tabla `cargo`
 --
 
-CREATE TABLE `administradores` (
-  `id_admin` int(10) NOT NULL,
-  `nombre_admin` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email_admin` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `passwoord_admin` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `fecha_registro_admin` date NOT NULL
+CREATE TABLE `cargo` (
+  `id` int(11) NOT NULL,
+  `descripcion` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `administradores`
+-- Volcado de datos para la tabla `cargo`
 --
 
-INSERT INTO `administradores` (`id_admin`, `nombre_admin`, `email_admin`, `passwoord_admin`, `fecha_registro_admin`) VALUES
-(1, 'BarResADS', 'barresads@gmail.com', 'BarResADS44', '2021-10-19');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `negocios`
---
-
-CREATE TABLE `negocios` (
-  `id_negocio` int(50) NOT NULL,
-  `nombre_negocio` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `categoria_negocio` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email_negocio` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `passwoord_negocio` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `plan` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+INSERT INTO `cargo` (`id`, `descripcion`) VALUES
+(1, 'administrador'),
+(2, 'negocio');
 
 -- --------------------------------------------------------
 
@@ -73,21 +56,39 @@ CREATE TABLE `publicaciones` (
   `fecha_termino` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `categoria` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `passwoord` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `plan` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id_cargo` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `categoria`, `email`, `passwoord`, `plan`, `id_cargo`) VALUES
+(1, 'BarResADS', 'administrador', 'barresads@gmail.com', '12345', 'admin', 1),
+(2, 'oliver', 'Bar', 'olivervisoso@gmail.com', '54321', 'Gratis', 2);
+
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `administradores`
+-- Indices de la tabla `cargo`
 --
-ALTER TABLE `administradores`
-  ADD PRIMARY KEY (`id_admin`);
-
---
--- Indices de la tabla `negocios`
---
-ALTER TABLE `negocios`
-  ADD PRIMARY KEY (`id_negocio`);
+ALTER TABLE `cargo`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `publicaciones`
@@ -96,26 +97,43 @@ ALTER TABLE `publicaciones`
   ADD PRIMARY KEY (`id_publicacion`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_cargo` (`id_cargo`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `administradores`
+-- AUTO_INCREMENT de la tabla `cargo`
 --
-ALTER TABLE `administradores`
-  MODIFY `id_admin` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT de la tabla `negocios`
---
-ALTER TABLE `negocios`
-  MODIFY `id_negocio` int(50) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `cargo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `publicaciones`
 --
 ALTER TABLE `publicaciones`
   MODIFY `id_publicacion` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_cargo`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

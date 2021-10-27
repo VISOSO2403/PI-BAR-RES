@@ -5,30 +5,28 @@ class Login{
   public $email;
   public $password;
 
-public function __construct(Conexion $con){
-    $this->con = $con;
+  public function __construct(Conexion $con){
+      $this->con = $con;
+    }
+
+  public function setEmail(string $email){
+    $this->email = $this->con->real_escape_string($email);
   }
 
-public function setEmail(string $email){
-  $this->email = $email;
-}
+  public function setPassword(string $password){
+    $this->password = password_hash($password, PASSWORD_BCRYPT);
+  }
 
-public function setPassword(string $password){
-  $this->password = $password;
-}
+  public function signIn(){
+    $query = "SELECT * FROM `usuarios` WHERE email = '$this->email' AND passwoord = '$this->password' ";
 
-public function signIn(){
-  $query = "SELECT * FROM `administradores` WHERE email_admin = '$this->email' AND password_admin = '$this->password' ";
+    $res = $this->con->query($query);
 
-  // $query = "SELECT * FROM `negocios` WHERE email_negocio = '$this->email' AND password_negocio = '$this->password' ";
-
-  $this->con->query($query);
-
-  if ($this->con->affected_rows > 0)
-    return true;
-  return false;
-  
-}
+    if ($this->con->affected_rows > 0)
+      return $res->fetch_array(MYSQLI_ASSOC);
+    return false;
+    
+  }
 
 }
 
